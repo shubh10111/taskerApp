@@ -1,0 +1,203 @@
+
+*{
+  box-sizing: border-box;
+}
+body{
+    background-color: rgba(72, 163, 0, 0.07);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+main{
+    margin: 16px;
+    padding: 0 16px 32px;
+}
+.title {
+    font-size: 64px;
+    color: #48a300;
+    text-align: center;
+  }
+  
+  .title span {
+    color: #61481c;
+  }
+.app-conatienr{
+    background-color: 
+    #FBFBFB;
+    max-width: 660px;
+    margin:  auto;
+    border-radius: 15px;
+    padding:32px 42px ;
+    box-shadow: 0 0 8px 0px rgba(0,0,0,0.1);
+}
+.subtitle{
+    font-size: 
+    32px;   
+}
+/* .sun-icon{
+    height:
+    51px ;
+    vertical-align: middle;
+    margin-left: 16px;
+} */
+.progressLable{
+    color:#858585;
+    font-size: 14px;
+    margin-bottom:20px ;
+}
+.progress-bar{
+height:  30px;
+background-color: rgba(72, 163, 0, 0.07);
+border-radius: 15px;
+margin-bottom: 40px;
+}
+.progress-value{
+  height: 100%;
+  width: 0;
+  background-color: #48a300;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 10px;
+  color: #eeffe0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out;;
+}
+.progress-value span {
+  padding-left: 20px;
+}
+.error-label{
+ font-size: 12px;
+  color: #ff5151;
+  margin-top: 4px;
+  display:none ;
+  justify-content: center;
+  text-align: center;
+
+}
+.goal-conatiner{
+    border:1px solid rgba(0,0,0,0.1);
+    border-radius: 17px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    background-color: #ffffff;
+    margin-bottom: 42px;
+    font-weight: 500;
+
+}
+.custom-checkbox{
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgba(97, 72, 28, 0.3);
+    border-radius: 50%;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;        
+}
+.goal-input{
+    border: none;
+    outline: none;
+    padding-left: 22px;
+    font-family: inherit;
+    font-size: 16px;
+    align-self: stretch;
+    width: 100%;
+    font-weight: 500;
+  }
+
+.quote {
+    font-weight: 500;
+    text-align: center;
+  }
+.goal-input::placeholder {
+    color: #d9d9d9;
+  }
+
+    @media(max-width:768px){
+      .title{
+        font-size: 32px;
+      }
+      .app-conatienr{ 
+            padding: 16px 32px;
+        }
+      .goal-conatiner{
+        height: 64px;
+        margin-bottom: 24px;
+        border-radius: 12px;
+      }
+      .custom-checkbox {
+        width: 20px;
+        height: 20px;
+      }
+      
+      .made-with {
+        margin-top: 32px;
+      }
+    
+      .progress-bar {
+        height: 24px;
+      }
+    }
+    .sun-icon {
+    height: 51px ;
+    vertical-align: middle;
+    margin-left: 16px;
+    animation: rotate 10s linear infinite;
+      }
+      
+      .sun-body {
+        width: 40px;
+        height: 40px;
+        background-color: orange;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      .sun-ray {
+        width: 4px;
+        height: 20px;
+        background-color: red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-origin: 50% 20px;
+      }
+      
+      .ray-1 { transform: rotate(0deg) translate(20px) rotate(0deg); }
+      .ray-2 { transform: rotate(45deg) translate(20px) rotate(-45deg); }
+      .ray-3 { transform: rotate(90deg) translate(20px) rotate(-90deg); }
+      .ray-4 { transform: rotate(135deg) translate(20px) rotate(-135deg); }
+      .ray-5 { transform: rotate(180deg) translate(20px) rotate(-180deg); }
+      .ray-6 { transform: rotate(225deg) translate(20px) rotate(-225deg); }
+      .ray-7 { transform: rotate(270deg) translate(20px) rotate(-270deg); }
+      .ray-8 { transform: rotate(315deg) translate(20px) rotate(-315deg); }
+      
+      @keyframes rotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .completed .custom-checkbox{
+        background-color: #48A300;
+        border-color:#48A300;
+      }
+      .check-icon{
+        display: none;
+      }
+      .completed .check-icon{
+        display: block;
+      }
+      .completed .goal-input{
+        color: #48A300;
+        text-decoration-line: line-through;
+      }
+     
+.show-error .error-label {
+  display: block;
+}
